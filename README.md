@@ -4,19 +4,19 @@ Use this boilerplate to get up and running quickly.
 
 # quick start
 
-## clone repo
+**clone repo**
 ```sh
 npm clone git@github.com:reergymerej/npm-es6-boilerplate.git ./your-project
 ```
 
-## reset git
+**reset git**
 ```sh
 cd ./your-project
 rm -rf ./.git
 git init
 ```
 
-## reset npm
+**reset npm**
 ```sh
 npm init
 ```
