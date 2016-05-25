@@ -1,7 +1,7 @@
 {
   "name": "npm-es6-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "Use this boilerplate to get up and running quickly.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register",
@@ -17,5 +17,22 @@
     "babel-register": "^6.9.0",
     "mocha": "^2.5.3",
     "willy": "^1.0.3"
-  }
+  },
+  "directories": {
+    "test": "test"
+  },
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reergymerej/npm-es6-boilerplate.git"
+  },
+  "keywords": [
+    "npm",
+    "es6",
+    "boilerplate"
+  ],
+  "bugs": {
+    "url": "https://github.com/reergymerej/npm-es6-boilerplate/issues"
+  },
+  "homepage": "https://github.com/reergymerej/npm-es6-boilerplate#readme"
 }
