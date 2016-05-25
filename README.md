@@ -6,7 +6,7 @@ Use this boilerplate to get up and running quickly.
 
 **clone repo**
 ```sh
-npm clone git@github.com:reergymerej/npm-es6-boilerplate.git ./your-project
+git clone git@github.com:reergymerej/npm-es6-boilerplate.git ./your-project
 ```
 
 **reset git**
