@@ -1,0 +1,15 @@
+{
+  "name": "compare-with-file",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "Jeremy Greer <jeremy.greer.atl@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "mocha": "^2.5.3",
+    "willy": "^1.0.3"
+  }
+}
