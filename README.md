@@ -1,6 +1,6 @@
 # npm-es6-boilerplate
 
-Use this boilerplate to get up and running quickly.
+Use this boilerplate to get up and running quickly. (eslint, es6, mocha)
 
 # quick start
 
@@ -19,6 +19,7 @@ git init
 **reset npm**
 ```sh
 npm init
+npm i
 ```
 
 # guide
