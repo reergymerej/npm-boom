@@ -9,14 +9,14 @@ Use this boilerplate to get up and running quickly.
 npm clone git@github.com:reergymerej/npm-es6-boilerplate.git ./your-project
 ```
 
-1. reset git
+2. reset git
 ```sh
 cd ./your-project
 rm -rf ./.git
 git init
 ```
 
-1. reset npm
+3. reset npm
 ```sh
 npm init
 ```
