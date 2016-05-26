@@ -1,5 +1,5 @@
 {
-  "version": "1.2.0",
+  "version": "1.2.1",
   "name": "npm-boom",
   "description": "Generate boilerplate for npm modules.",
   "main": "index.js",
