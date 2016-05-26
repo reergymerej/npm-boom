@@ -11,7 +11,13 @@ npm i -g npm-boom
 ## usage
 
 ```sh
+# create scaffolding
 npm-boom projectname
+
+# install npm dependencies
+cd projectname && npm i
+
+# you're done!
 ```
 
 ### structure
