@@ -1,11 +1,11 @@
-# npm-es6-boilerplate
+# npm-boom
 
 Generate boilerplate for npm modules. (eslint, es6, mocha)
 
 ## installation
 
 ```sh
-npm i -g npm-es6-boilerplate
+npm i -g npm-boom
 ```
 
 ## usage
@@ -13,7 +13,7 @@ npm i -g npm-es6-boilerplate
 Create your `foo` project.
 
 ```sh
-npm-es6-boilerplate foo
+npm-boom foo
 ```
 
 ### structure
@@ -34,6 +34,3 @@ npm-es6-boilerplate foo
 * **test** - runs tests in `./test` with Mocha
 * **build** - transpiles `./src` to `./lib`
 * **prepublish** - automatically runs when publishing to build `./lib`
-
-# TODO
-* replace {{PROJECT_DESCRIPTION}} in package.json and README.md
