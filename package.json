@@ -30,6 +30,10 @@
     "npm",
     "boilerplate"
   ],
+  "preferGlobal": "true",
+  "bin": {
+    "npm-es6" : "lib/index.js"
+  },
   "author": "Jeremy Greer <jeremy.greer.atl@gmail.com>",
   "bugs": {
     "url": "https://github.com/reergymerej/npm-es6-boilerplate/issues"
