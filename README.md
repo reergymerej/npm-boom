@@ -2,6 +2,10 @@
 
 Generate boilerplate for es6 npm modules.
 
+<iframe width="420" height="315" src="https://www.youtube.com/embed/ZOe2RMjep3o" frameborder="0" allowfullscreen></iframe>
+
+[![npm-boom demo](https://img.youtube.com/vi/ZOe2RMjep3o/0.jpg)](https://www.youtube.com/watch?v=ZOe2RMjep3o)
+
 ## installation
 
 ```sh
