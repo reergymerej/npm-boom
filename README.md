@@ -1,41 +1,41 @@
-# npm-es6-boilerplate
+# npm-boom
 
-Use this boilerplate to get up and running quickly. (eslint, es6, mocha)
+Generate boilerplate for es6 npm modules.
 
-# quick start
+## installation
 
-**clone repo**
 ```sh
-git clone git@github.com:reergymerej/npm-es6-boilerplate.git ./your-project
+npm i -g npm-boom
 ```
 
-**reset git**
+## usage
+
 ```sh
-cd ./your-project
-rm -rf ./.git
-git init
+# create scaffolding
+npm-boom projectname
+
+# install npm dependencies
+cd projectname && npm i
+
+# you're done!
 ```
 
-**reset npm**
-```sh
-npm init
-npm i
-```
+### structure
 
-# guide
+* src/ - es6
+* test/ - tests run by Mocha (es6)
+* lib/ - transpiled es5
 
-Write your es6 in `./src`.
+### features
 
-Write your tests in `./test`.
+* eslint setup
+* babel setup
+* basic npm and git ignore files
+* Mocha test setup (supports es6)
 
-Build with `npm run build`.
-
-Test with `npm test`.
-
-
-## npm scripts
+### npm scripts
 
 * **lint** - runs eslint on `./src` and `./test`
 * **test** - runs tests in `./test` with Mocha
 * **build** - transpiles `./src` to `./lib`
-* **prepublish** - automatically runs when publishing to build `./lib`
+* **prepublish** - automatically runs when publishing to npm, runs `build` for you

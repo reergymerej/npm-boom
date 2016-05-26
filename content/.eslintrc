@@ -43,6 +43,7 @@
     "new-cap": 0,
     "no-bitwise": 1,
     "no-caller": 2,
+    "no-console": 1,
     "no-dupe-keys": 2,
     "no-empty": 0,
     "no-extra-boolean-cast": 0,

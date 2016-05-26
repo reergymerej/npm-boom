@@ -1,5 +1,7 @@
 {
-  "version": "1.0.0",
+  "version": "1.2.0",
+  "name": "npm-boom",
+  "description": "Generate boilerplate for npm modules.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register",
@@ -18,5 +20,28 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {}
+  "dependencies": {
+    "ncp": "^2.0.0",
+    "replace-in-file": "^1.0.2",
+    "rimraf": "^2.5.2"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reergymerej/npm-boom.git"
+  },
+  "keywords": [
+    "es6",
+    "npm",
+    "boilerplate",
+    "generator"
+  ],
+  "preferGlobal": "true",
+  "bin": {
+    "npm-boom": "lib/index.js"
+  },
+  "author": "Jeremy Greer <jeremy.greer.atl@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/reergymerej/npm-boom/issues"
+  },
+  "homepage": "https://github.com/reergymerej/npm-boom#readme"
 }
