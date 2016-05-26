@@ -37,7 +37,3 @@ npm-es6-boilerplate foo
 
 # TODO
 * replace {{PROJECT_DESCRIPTION}} in package.json and README.md
-
-* copy contents of content to directory
-
-* import app in

@@ -4,6 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import { ncp } from 'ncp';
 import rimraf from 'rimraf';
+import replace from 'replace-in-file';
 
 
 
@@ -36,6 +37,26 @@ try {
   die(`We cannot make ${destination}.`);
 }
 
+function addProjectName(destinationDir, projectName) {
+  return new Promise((resolve, reject) => {
+    const options = {
+      files: [
+        path.join(destinationDir, 'README.md'),
+        path.join(destinationDir, 'package.json'),
+      ],
+      replace: '{{PROJECT_NAME}}',
+      with: projectName,
+    };
+
+    replace(options, (err) => {
+      if (err) {
+        reject(err)
+      } else {
+        resolve();
+      }
+    });
+  });
+}
 
 // copy
 const content = path.join(__dirname, '../content');
@@ -46,6 +67,12 @@ ncp(content, destination, (err) => {
     });
   }
 
-  // TODO: rewrite new files
-  // TODO: tell user
+  addProjectName(destination, projectName).then(
+    () => {
+      console.log(`${projectName} is ready.`);
+    },
+    (/*err*/) => {
+      // TODO: handle error
+    }
+  );
 });
