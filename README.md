@@ -1,6 +1,6 @@
 # npm-boom
 
-Generate boilerplate for npm modules. (eslint, es6, mocha)
+Generate boilerplate for es6 npm modules.
 
 ## installation
 
@@ -10,27 +10,26 @@ npm i -g npm-boom
 
 ## usage
 
-Create your `foo` project.
-
 ```sh
-npm-boom foo
+npm-boom projectname
 ```
 
 ### structure
 
-* lib/ - transpiled es5
 * src/ - es6
 * test/ - tests run by Mocha (es6)
+* lib/ - transpiled es5
 
 ### features
 
-* standard eslint setup
-* standard babel setup
-* standard eslint, npm, and git ignore files
+* eslint setup
+* babel setup
+* basic npm and git ignore files
+* Mocha test setup (supports es6)
 
 ### npm scripts
 
 * **lint** - runs eslint on `./src` and `./test`
 * **test** - runs tests in `./test` with Mocha
 * **build** - transpiles `./src` to `./lib`
-* **prepublish** - automatically runs when publishing to build `./lib`
+* **prepublish** - automatically runs when publishing to npm, runs `build` for you

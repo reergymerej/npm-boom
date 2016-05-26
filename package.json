@@ -32,7 +32,8 @@
   "keywords": [
     "es6",
     "npm",
-    "boilerplate"
+    "boilerplate",
+    "generator"
   ],
   "preferGlobal": "true",
   "bin": {
