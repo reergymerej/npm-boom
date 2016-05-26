@@ -34,7 +34,7 @@ try {
   fs.mkdirSync(destination);
 } catch (err) {
   // TODO: tailor based on err - already exists, permission issues
-  die(`We cannot make ${destination}.`);
+  die(`There was a problem creating ${destination}.`);
 }
 
 function addProjectName(destinationDir, projectName) {
@@ -69,10 +69,11 @@ ncp(content, destination, (err) => {
 
   addProjectName(destination, projectName).then(
     () => {
-      console.log(`${projectName} is ready.`);
+      console.log(`"${projectName}" has been created.`);
     },
-    (/*err*/) => {
-      // TODO: handle error
+    (err) => {
+      console.error(err);
+      die('Something went wrong.  :(');
     }
   );
 });
