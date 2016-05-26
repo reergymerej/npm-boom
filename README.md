@@ -1,39 +1,34 @@
 # npm-es6-boilerplate
 
-Use this boilerplate to get up and running quickly. (eslint, es6, mocha)
+Generate boilerplate for npm modules. (eslint, es6, mocha)
 
-# quick start
+## installation
 
-**clone repo**
 ```sh
-git clone git@github.com:reergymerej/npm-es6-boilerplate.git ./your-project
+npm i -g npm-es6-boilerplate
 ```
 
-**reset git**
+## usage
+
+Create your `foo` project.
+
 ```sh
-cd ./your-project
-rm -rf ./.git
-git init
+npm-es6-boilerplate foo
 ```
 
-**reset npm**
-```sh
-npm init
-npm i
-```
+### structure
 
-# guide
+* lib/ - transpiled es5
+* src/ - es6
+* test/ - tests run by Mocha (es6)
 
-Write your es6 in `./src`.
+### features
 
-Write your tests in `./test`.
+* standard eslint setup
+* standard babel setup
+* standard eslint, npm, and git ignore files
 
-Build with `npm run build`.
-
-Test with `npm test`.
-
-
-## npm scripts
+### npm scripts
 
 * **lint** - runs eslint on `./src` and `./test`
 * **test** - runs tests in `./test` with Mocha

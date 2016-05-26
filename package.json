@@ -1,5 +1,7 @@
 {
-  "version": "1.0.0",
+  "version": "1.2.0",
+  "name": "npm-es6-boilerplate",
+  "description": "Generate boilerplate for npm modules.",
   "main": "index.js",
   "scripts": {
     "test": "mocha --compilers js:babel-register",
@@ -18,5 +20,19 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {}
+  "dependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/reergymerej/npm-es6-boilerplate.git"
+  },
+  "keywords": [
+    "es6",
+    "npm",
+    "boilerplate"
+  ],
+  "author": "Jeremy Greer <jeremy.greer.atl@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/reergymerej/npm-es6-boilerplate/issues"
+  },
+  "homepage": "https://github.com/reergymerej/npm-es6-boilerplate#readme"
 }
