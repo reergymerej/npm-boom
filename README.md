@@ -34,3 +34,10 @@ npm-es6-boilerplate foo
 * **test** - runs tests in `./test` with Mocha
 * **build** - transpiles `./src` to `./lib`
 * **prepublish** - automatically runs when publishing to build `./lib`
+
+# TODO
+* replace {{PROJECT_DESCRIPTION}} in package.json and README.md
+
+* copy contents of content to directory
+
+* import app in

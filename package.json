@@ -20,7 +20,10 @@
   "directories": {
     "test": "test"
   },
-  "dependencies": {},
+  "dependencies": {
+    "ncp": "^2.0.0",
+    "rimraf": "^2.5.2"
+  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/reergymerej/npm-es6-boilerplate.git"
@@ -32,7 +35,7 @@
   ],
   "preferGlobal": "true",
   "bin": {
-    "npm-es6" : "lib/index.js"
+    "npm-es6": "lib/index.js"
   },
   "author": "Jeremy Greer <jeremy.greer.atl@gmail.com>",
   "bugs": {
