@@ -3,6 +3,7 @@
   "name": "{{PROJECT_NAME}}",
   "main": "index.js",
   "scripts": {
+    "start": "babel-node src/index.js",
     "test": "mocha --compilers js:babel-register",
     "lint": "eslint .",
     "build": "babel src -d lib",
