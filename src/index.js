@@ -9,8 +9,8 @@ import replace from 'replace-in-file';
 
 
 function getProjectName() {
-  // TODO: strip . / \
-  return process.argv[2];
+  const invalid = /[^a-z0-9-]/gi;
+  return process.argv[2].replace(invalid, '');
 }
 
 function die(message) {
