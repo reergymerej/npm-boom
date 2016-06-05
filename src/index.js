@@ -58,6 +58,12 @@ function addProjectName(destinationDir, projectName) {
   });
 }
 
+function addNpmIgnore(destinationDir) {
+  const content = 'src/';
+  const filePath = path.join(destinationDir, '.npmignore');
+  fs.writeFileSync(filePath, content);
+}
+
 // copy
 const content = path.join(__dirname, '../content');
 ncp(content, destination, (err) => {
@@ -69,6 +75,7 @@ ncp(content, destination, (err) => {
 
   addProjectName(destination, projectName).then(
     () => {
+      addNpmIgnore(destination);
       console.log(`"${projectName}" has been created.`);
     },
     (err) => {
