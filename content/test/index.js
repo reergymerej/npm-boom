@@ -1,8 +1,8 @@
-import { will } from 'willy';
+import { expect } from 'chai';
 import app from '../src';
 
 describe('sanity', () => {
   it('should exist', () => {
-    will('it').be(true);
+    expect('it').be.equal(true);
   });
 });
