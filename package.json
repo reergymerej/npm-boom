@@ -4,6 +4,7 @@
   "description": "Generate boilerplate for es6 npm modules.",
   "main": "index.js",
   "scripts": {
+    "start": "node ./lib/index.js",
     "test": "mocha --compilers js:babel-register",
     "lint": "eslint .",
     "build": "babel src -d lib",

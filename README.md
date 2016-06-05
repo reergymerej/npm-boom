@@ -37,6 +37,7 @@ cd projectname && npm i
 
 ### npm scripts
 
+* **start** - starts module
 * **lint** - runs eslint on `./src` and `./test`
 * **test** - runs tests in `./test` with Mocha
 * **build** - transpiles `./src` to `./lib`
