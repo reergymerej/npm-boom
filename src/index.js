@@ -6,8 +6,6 @@ import { ncp } from 'ncp';
 import rimraf from 'rimraf';
 import replace from 'replace-in-file';
 
-
-
 function getProjectName() {
   const invalid = /[^a-z0-9-]/gi;
   return process.argv[2].replace(invalid, '');
@@ -18,14 +16,12 @@ function die(message) {
   process.exit(1);
 }
 
-
 // get name
 const projectName = getProjectName();
 
 if (!projectName) {
   die('What should we call the project?');
 }
-
 
 // create destination
 const cwd = process.cwd();
@@ -58,10 +54,17 @@ function addProjectName(destinationDir, projectName) {
   });
 }
 
-function addNpmIgnore(destinationDir) {
-  const content = 'src/';
-  const filePath = path.join(destinationDir, '.npmignore');
+function addMissingFile(destinationDir, filename, content) {
+  const filePath = path.join(destinationDir, filename);
   fs.writeFileSync(filePath, content);
+}
+
+function addMissingFiles(destinationDir) {
+  addMissingFile(destinationDir, '.npmignore', 'src/');
+  addMissingFile(destinationDir, '.gitignore',
+`node_modules/
+lib/
+`);
 }
 
 // copy
@@ -75,7 +78,7 @@ ncp(content, destination, (err) => {
 
   addProjectName(destination, projectName).then(
     () => {
-      addNpmIgnore(destination);
+      addMissingFiles(destination);
       console.log(`"${projectName}" has been created.`);
     },
     (err) => {
