@@ -1,5 +1,5 @@
 # npm-boom
-<small>v2.0.2</small>
+<small>v2.0.3</small>
 
 Generate boilerplate for es6 npm modules.
 
