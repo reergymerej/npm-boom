@@ -1,11 +1,11 @@
 {
-  "version": "2.0.2",
+  "version": "2.0.3",
   "name": "npm-boom",
   "description": "Generate boilerplate for es6 npm modules.",
   "main": "index.js",
   "scripts": {
     "start": "node ./lib/index.js",
-    "test": "mocha --compilers js:babel-register",
+    "test": "mocha --compilers js:babel-register --recursive",
     "lint": "eslint .",
     "build": "babel src -d lib",
     "prepublish": "npm run build"
