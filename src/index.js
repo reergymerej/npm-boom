@@ -80,6 +80,8 @@ ncp(content, destination, (err) => {
     () => {
       addMissingFiles(destination);
       console.log(`"${projectName}" has been created.`);
+      console.log('To get started, run')
+      console.log(`cd ${projectName} && yarn`)
     },
     (err) => {
       console.error(err);
