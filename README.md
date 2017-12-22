@@ -1,5 +1,5 @@
 # npm-boom
-<small>v2.0.3</small>
+<small>v3.0.0</small>
 
 Generate boilerplate for es6 npm modules.
 
@@ -8,6 +8,9 @@ Generate boilerplate for es6 npm modules.
 ## installation
 
 ```sh
+yarn global add npm-boom
+
+# or if you prefer
 npm i -g npm-boom
 ```
 
@@ -18,7 +21,7 @@ npm i -g npm-boom
 npm-boom projectname
 
 # install npm dependencies
-cd projectname && npm i
+cd projectname && yarn
 
 # you're done!
 ```
@@ -26,7 +29,6 @@ cd projectname && npm i
 ### structure
 
 * src/ - es6
-* test/ - tests run by Mocha (es6)
 * lib/ - transpiled es5
 
 ### features
@@ -34,12 +36,12 @@ cd projectname && npm i
 * eslint setup
 * babel setup
 * basic npm and git ignore files
-* Mocha test setup (supports es6)
+* Jest test setup (supports es6)
+* React ready
 
-### npm scripts
+### package scripts
 
-* **start** - starts module
-* **lint** - runs eslint on `./src` and `./test`
-* **test** - runs tests in `./test` with Mocha
-* **build** - transpiles `./src` to `./lib`
-* **prepublish** - automatically runs when publishing to npm, runs `build` for you
+* **start*
+* **lint**
+* **test**
+* **build
