@@ -8,7 +8,7 @@
     "test": "mocha --compilers js:babel-register --recursive",
     "lint": "eslint .",
     "build": "babel src -d lib",
-    "prepublish": "npm run build"
+    "prepublishOnly": "npm run build"
   },
   "license": "ISC",
   "devDependencies": {
