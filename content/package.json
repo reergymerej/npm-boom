@@ -6,7 +6,7 @@
     "start": "babel-node src/index.js",
     "test": "jest src/ --config jest.config.js",
     "lint": "eslint .",
-    "build": "babel src -d lib",
+    "build": "babel src -d lib --ignore '**/*.test.js,__mocks__'",
     "prepublish": "npm run build"
   },
   "devDependencies": {
