@@ -54,17 +54,17 @@ function addProjectName(destinationDir, projectName) {
   });
 }
 
-function addMissingFile(destinationDir, filename, content) {
-  const filePath = path.join(destinationDir, filename);
-  fs.writeFileSync(filePath, content);
+function rename(destinationDir, filename, newFileName) {
+  const oldPath = path.join(destinationDir, filename);
+  const newPath = path.join(destinationDir, newFileName);
+  fs.renameSync(oldPath, newPath)
 }
 
 function addMissingFiles(destinationDir) {
-  addMissingFile(destinationDir, '.npmignore', 'src/');
-  addMissingFile(destinationDir, '.gitignore',
-`node_modules/
-lib/
-`);
+  // Some files have special meaning, so we have to rename them.
+  // Fix the names now.
+  rename(destinationDir, '.npmignore_', '.npmignore')
+  rename(destinationDir, '.gitignore_', '.gitignore')
 }
 
 // copy
