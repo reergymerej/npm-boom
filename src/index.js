@@ -78,6 +78,7 @@ ncp(content, destination, (err) => {
 
   addProjectName(destination, projectName).then(
     () => {
+      console.log('npm-boom v3.0.3')
       addMissingFiles(destination);
       console.log(`"${projectName}" has been created.`);
       console.log('To get started, run')
