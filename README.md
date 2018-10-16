@@ -40,7 +40,7 @@ cd projectname && yarn
 
 ### package scripts
 
-* **start*
-* **lint**
-* **test**
-* **build
+* start
+* lint
+* test
+* build
