@@ -13,12 +13,11 @@
     "babel-cli": "^6.9.0",
     "babel-core": "^6",
     "babel-eslint": "7",
-    "babel-jest": "^22.0.3",
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.6.1",
     "eslint": "3.x",
     "eslint-plugin-react": "^7.5.1",
-    "jest": "^22.0.3"
+    "jest": "^23.6.0"
   },
   "dependencies": {},
   "license": "ISC"
