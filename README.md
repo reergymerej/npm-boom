@@ -2,13 +2,13 @@
 
 Generate boilerplate for es6 npm modules.
 
-[![npm-boom demo](https://img.youtube.com/vi/ZOe2RMjep3o/0.jpg)](https://www.youtube.com/watch?v=ZOe2RMjep3o)
+[![npm-boom demo](https://i.ytimg.com/vi/QnhxLDSI354/hqdefault.jpg)](https://youtu.be/QnhxLDSI354)
+
 
 ## installation
 
 ```sh
 yarn global add npm-boom
-
 # or if you prefer
 npm i -g npm-boom
 ```
